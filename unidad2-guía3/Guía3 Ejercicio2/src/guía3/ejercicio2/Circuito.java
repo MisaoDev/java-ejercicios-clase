@@ -42,14 +42,14 @@ public class Circuito {
   
   public void print() {
     System.out.printf("Detalles del circuito - %s%n", nombreRuta);
-    System.out.printf("===============================================%n");
+    System.out.printf("===================================================%n");
     
     for (RegistroPiloto r : listaPilotos) {
       String nombrePiloto = r.getPiloto().getNombre();
       int segundos = r.getTiempo();
       double velocidadMáxima = r.getVelocidadMáxima();
       
-      System.out.printf("%-26s | %02d:%02d:%02d | %.2f%n", nombrePiloto,
+      System.out.printf("%-26s | %02d:%02d:%02d | %.2f km/h%n", nombrePiloto,
               segundos / 3600, (segundos % 3600) / 60, segundos % 60, velocidadMáxima);
     }
     System.out.printf("%n");

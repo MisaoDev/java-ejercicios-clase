@@ -22,12 +22,12 @@ public class Main {
       Circuito[] circuitos = new Circuito[2];
       
       circuitos[0] = new Circuito("Sprint ruta norte");
-      circuitos[0].agregarRegistro(pilotos[0], LocalTime.of(1, 37, 22).getSecond(), 147);
-      circuitos[0].agregarRegistro(pilotos[1], LocalTime.of(1, 34, 07).getSecond(), 152);
+      circuitos[0].agregarRegistro(pilotos[0], LocalTime.of(1, 37, 22).toSecondOfDay(), 147);
+      circuitos[0].agregarRegistro(pilotos[1], LocalTime.of(1, 34, 07).toSecondOfDay(), 152);
       
       circuitos[1] = new Circuito("Ruta patagonia");
-      circuitos[1].agregarRegistro(pilotos[0], LocalTime.of(2, 42, 58).getSecond(), 160);
-      circuitos[1].agregarRegistro(pilotos[1], LocalTime.of(3, 01, 10).getSecond(), 156);
+      circuitos[1].agregarRegistro(pilotos[0], LocalTime.of(2, 42, 58).toSecondOfDay(), 160);
+      circuitos[1].agregarRegistro(pilotos[1], LocalTime.of(3, 01, 10).toSecondOfDay(), 156);
       
       for (int i = 0; i < 3; i++) {
         pilotos[i].print();
